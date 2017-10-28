@@ -1,3 +1,3 @@
 class TokenSerializer < ActiveModel::Serializer
-  attributes :token_data
+  attributes :slack_token_data, :google_token_data
 end

@@ -13,7 +13,8 @@
 ActiveRecord::Schema.define(version: 20171028110848) do
 
   create_table "tokens", force: :cascade do |t|
-    t.string "token_data"
+    t.string "slack_token_data"
+    t.string "google_token_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
