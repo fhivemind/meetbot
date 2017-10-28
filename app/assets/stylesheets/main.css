@@ -38,7 +38,11 @@ a:hover {
   color: #444;
 }
 .btn-default {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.btn-default.red {
+  background: rgba(255,0,0,0.3);
   color: #fff;
 }
 .btn-default:hover {
@@ -47,9 +51,13 @@ a:hover {
     text-decoration: none;
 
 }
+.btn-default.red:hover {
+  background: rgba(255,0,0,0.8);
+  color: #fff;
+}
 .title-big {
   text-align: center;
-  font-size: 60px;
+  font-size: 62px;
 }
 .subtitle-big {
   text-align: center;
@@ -59,14 +67,14 @@ a:hover {
   color: #bdc3c7;
 }
 .title-small {
-  font-size: 45px;
+  font-size: 47px;
 }
 .subtitle-small {
   font-weight: 100;
   padding-bottom: 30px;
   position: relative;
-  color: #bdc3c7;
-  font-size: 20px;
+  color: #a7acaf;
+  font-size: 22px;
 }
 .logo-menu .container {
   margin-top: 10px;
@@ -204,7 +212,7 @@ background: url(../img/hero-bg.jpg) fixed;
 }
 #key-features h3 {
   margin-top: 0;
-  font-size: 28px;
+  font-size: 30px;
   color: #3498DB;
 }
 #main-features #feature-list-item-1,
@@ -212,7 +220,7 @@ background: url(../img/hero-bg.jpg) fixed;
   background: #ecf0f1;
 }
 #main-features .title-small {
-  color: #3498DB;
+  color: rgba(52, 152, 219, 0.71);
 }
 #main-features .subtitle-small {
   line-height: 30px;
@@ -236,7 +244,12 @@ background: url(../img/hero-bg.jpg) fixed;
   margin-top: 20px;
   margin-right: 15px;
   margin-left: 15px;
+    background: rgba(43, 43, 43, 0.65);
   text-transform: uppercase;
+}
+#features .btn-lg:hover {
+background: rgba(216, 216, 216, 0.75)
+
 }
 #features .btn-lg i {
   padding-right: 5px;
@@ -268,8 +281,9 @@ background: url(../img/hero-bg.jpg) fixed;
   padding-bottom: 40px;
 }
 #features .box-item .icon {
-  background: #3498db;
-  text-align: center;
+  background: rgba(32, 150, 139, 0.69);
+    text-align: center;
+    border: 2px solid white;
   margin-top: 12px;
   -webkit-transition: background 0.2s, color 0.2s;
   -moz-transition: background 0.2s, color 0.2s;
@@ -287,14 +301,14 @@ background: url(../img/hero-bg.jpg) fixed;
 #features .box-item .text h4 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
 }
 #features .box-item .text p {
   color: #BABABA;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
 }
 #features .box-item:hover .icon {
@@ -304,7 +318,16 @@ background: url(../img/hero-bg.jpg) fixed;
   color: #ffffff;
 }
 #features .show-box {
-  padding: 22px 64px;
+  padding: 22px 34px;
+    display: block; /*for the img inside your div */  
+margin-left: auto ;
+margin-right: auto ;
+}
+
+#features .show-box img {
+        display: block; /*for the img inside your div */  
+margin-left: auto ;
+margin-right: auto ;
 }
 #bottom {
   background: #333;
@@ -358,4 +381,7 @@ background: url(../img/hero-bg.jpg) fixed;
 #bottom .social .fa-linkedin:hover {
   background: #007bb6;
   color: #fff;
+}
+.feature-item p {
+    font-size: 17px;
 }

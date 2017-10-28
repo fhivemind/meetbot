@@ -10,7 +10,7 @@ class OauthsController < ApplicationController
       options                                                                     
     )                                                                             
     params = {                                                                    
-      scope: 'read',                                        
+      scope: 'users:read,team:read,identify',                                        
       redirect_uri: 'http://localhost:3002/oauth/callback'                       
     }                                                                             
     redirect_to client.auth_code.authorize_url(params)                            
