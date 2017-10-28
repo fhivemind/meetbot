@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'homes#index'
 
-  resources :bot_authorizations, only: [:index]
+get    '/authorize', to: 'oauth#authorize'                                       
+get    '/oauth/callback', to: 'oauth#authorize_callback' 
 
 end
