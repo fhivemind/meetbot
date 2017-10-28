@@ -1,24 +1,18 @@
-class OauthController < ApplicationController
+class OauthsController < ApplicationController
 
 	def authorize                                                                   
     options = {                                                                   
       site: 'https://slack.com/oauth/authorize'                                  
     }                                                                             
     client ||= OAuth2::Client.new(                                                
-      'client-id',                                                 
-      'client-secret',                                         
+      '262549251568.264299299174',                                                 
+      '57b1f4eb1c5e8dcac013da4a5a2a3048',                                         
       options                                                                     
     )                                                                             
     params = {                                                                    
-      scope: 'incoming-webhook, commands',                                        
-      redirect_uri: 'https://localhost:3000/oauth/callback'                       
+      scope: 'read',                                        
+      redirect_uri: 'http://localhost:3002/oauth/callback'                       
     }                                                                             
     redirect_to client.auth_code.authorize_url(params)                            
   end                                                                             
-
-  def authorize_callback                                                          
-    puts params["code"] 
-    redirect_to root_url                                                              
-  end 
-
 end
