@@ -1,6 +1,8 @@
 class HomesController < ApplicationController
   
   def index
-    puts params["code"]
+    if params["code"]
+      Token.create(token_data: params["code"])
+    end
   end
 end
