@@ -192,7 +192,7 @@ a:hover {
 }
 #sign-in-area,
 #sign-up-area {
-background: url(../img/backgrounds/hero-bg.jpg) fixed;
+background: url(../img/hero-bg.jpg) fixed;
 }
 #sign-in-area .title-big,
 #sign-up-area .title-big {
@@ -221,7 +221,7 @@ background: url(../img/backgrounds/hero-bg.jpg) fixed;
   margin-top: 20px;
 }
 #features {
-  background: url(../img/backgrounds/feature-bg.jpg);
+  background: url(../img/feature-bg.jpg);
   background-size: cover;
   overflow: hidden;
   position: relative;
